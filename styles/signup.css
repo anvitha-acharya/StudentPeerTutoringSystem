@@ -1,0 +1,122 @@
+/* signup.css */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(240, 240, 255);
+}
+
+.header {
+    background-color: rgb(219, 219, 249);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 50px;
+    border: 0.5px solid #c4d5dc;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    z-index: 120;
+    margin-top:5px;
+}
+
+.header-title {
+    padding: 15px 2%; /* Adjust padding as needed */
+    color: #2c3e50;
+    font-size: 40px; /* Responsive font size based on viewport width */
+    margin: 0;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text if it exceeds container */
+    text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
+}
+
+.signup-container {
+    margin-top:120px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    width: 330px;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+.signup-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(83, 74, 74);
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    text-decoration: none; 
+    font-family: 'Nunito', sans-serif;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.15s;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: rgb(135, 135, 211);
+}
+
+button:active {
+    background-color: rgb(128, 128, 152);
+}
+
+/* signup.css */
+
+/* Paste your existing CSS styles here */
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}

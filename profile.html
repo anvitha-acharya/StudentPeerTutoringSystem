@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <div class="header-title">
+                Student Peer Tutoring System
+            </div>
+        </div>
+        <div class="right-section">
+            <a href="allcourses.html" class="header-button">All Courses</a>
+            <a href="learn.html" class="header-button">Learn</a>
+            <a href="teach.html" class="header-button">Teach</a>
+            <a href="learnhistory.html" class="header-button">Learn History</a>
+            <a href="teachhistory.html" class="header-button">Teach History</a>
+            <a href="profile.html" class="profile-button">Profile</a>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <h2 class="profile-header">Edit Profile</h2>
+
+        <form id="profile-form" class="profile-form" action="#" method="POST">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-control">
+                <label for="year">Year</label>
+                <input type="text" id="year" name="year" placeholder="Enter your year of study" required>
+            </div>
+
+            <div class="form-control">
+                <label for="branch">Branch</label>
+                <input type="text" id="branch" name="branch" placeholder="Enter your branch" required>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-control">
+                <label for="courses-interested">Courses Interested</label>
+                <input type="text" id="courses-interested" name="courses-interested" placeholder="Enter courses you are interested in" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-button">Save Changes</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

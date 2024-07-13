@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach Page</title>
+    <link rel="stylesheet" href="styles/learnTeach.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <div class="header-title">
+                Student Peer Tutoring System
+            </div>
+        </div>
+        <div class="right-section">
+            <a href="allcourses.html" class="header-button">All Courses</a>
+            <a href="learn.html" class="header-button">Learn</a>
+            <a href="teach.html" class="header-button">Teach</a>
+            <a href="learnhistory.html" class="header-button">Learn History</a>
+            <a href="teachhistory.html" class="header-button">Teach History</a>
+            <a href="profile.html" class="profile-button">Profile</a>
+
+            <img class="my-channel" src="channelpics/my-channel.jpeg">
+        </div>
+    </div>
+
+    <div class="tutors-container">
+        <h2 class="tutors-header">Teaching Details</h2>
+
+        <table class="tutors-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Year</th>
+                    <th>Course Name</th>
+                    <th>Days Free</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Student A</td>
+                    <td>Year of study</td>
+                    <td>Mathematics</td>
+                    <td>Monday, Wednesday</td>
+                    <td><button class="accept-button" data-student="Student A" data-course="Mathematics">Accept</button></td>
+                </tr>
+                <tr>
+                    <td>Student B</td>
+                    <td>Year of study</td>
+                    <td>Physics</td>
+                    <td>Tuesday, Thursday</td>
+                    <td><button class="accept-button" data-student="Student B" data-course="Physics">Accept</button></td>
+                </tr>
+                <!-- Add more rows for additional students -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/teach.js"></script>
+</body>
+</html>

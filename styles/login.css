@@ -1,0 +1,106 @@
+body {
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(240, 240, 255);
+}
+.header {
+    background-color: rgb(219, 219, 249); /* Light grey background */
+    max-width: 100%; /* Ensure the header doesn't exceed the viewport width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px; /* Slightly reduced margin */
+    border-radius: 50px; /* Rounded corners */
+    border: 0.5px solid #c4d5dc; /* Blue border */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header-title {
+    padding: 15px 25px; /* Uniform padding */
+    color: #2c3e50; /* Dark grey text color */
+    font-size: 35px; /* Slightly reduced font size */
+    margin: 0; /* Remove default margin */
+    padding-left:70px;
+    font-weight: bold;
+    padding-right:70px;
+}
+
+
+
+.login-container {
+    background-color: #fff;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Slightly increased shadow for depth */
+    width: 330px;
+    text-align: center;
+    display: grid;
+    gap: 15px; /* Spacing between grid items */
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.login-header {
+    margin-top: 10px; /* Adjusted margin for spacing */
+    margin-bottom: 10px; /* Adjusted margin for spacing */
+    font-size: 35px; /* Slightly reduced font size */
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 12px; /* Adjusted margin for spacing */
+    text-align: left;
+}
+
+label {
+    margin-bottom: 5px; 
+    font-size:14px;
+    font-weight: bold;
+    color:rgb(83, 74, 74)/* Reduced margin for better alignment */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    font-family: Nunito;
+    font-size: 13px; /* Decreased placeholder text size */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width input for responsiveness */
+    padding: 7px; /* Increased padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly rounded corners */
+    margin-bottom: 10px;
+    margin-top: 3px;
+    font-size:15px;
+}
+
+
+button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-family: Nunito;
+    text-decoration: none; 
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.15s;
+    margin-top:25px;
+}
+
+button:hover {
+    background-color: rgb(135, 135, 211);
+}
+button:active {
+    background-color: rgb(128, 128, 152);
+}

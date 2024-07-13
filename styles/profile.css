@@ -1,0 +1,152 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(240, 240, 255);
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(219, 219, 249);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 50px;
+    border: 0.5px solid #c4d5dc;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    z-index: 120;
+}
+
+.header .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .right-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c3e50;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; 
+    margin-left: 10px;
+    transition: background-color 0.15s;
+}
+
+.header-button:hover {
+    background-color: rgb(135, 135, 211);
+}
+
+.header-button:active {
+    background-color: rgb(128, 128, 152);
+}
+
+.profile-container {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-control {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #aaa;
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button,
+.reset-button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.15s;
+}
+
+.submit-button:hover,
+.reset-button:hover {
+    background-color: rgb(135, 135, 211);
+}
+
+.submit-button:active,
+.reset-button:active {
+    background-color: rgb(128, 128, 152);
+}
+.profile-button{
+    margin-left:15px;
+    background-color:white;
+    color: white;
+    padding: 7px 15px;
+    border: solid;
+    color:rgb(86, 86, 179);
+    border-color:rgb(86, 86, 179) ;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; 
+    transition: background-color 0.15s;
+    margin-right:35px;
+}
+.profile-button:hover{
+    background-color:rgb(193, 189, 189);
+}
+.profile-button:active{
+    background-color:rgb(194, 194, 211) ;
+}

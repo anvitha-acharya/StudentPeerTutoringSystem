@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn History</title>
+    <link rel="stylesheet" href="styles/learnHistory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <div class="header-title">
+                Student Peer Tutoring System
+            </div>
+        </div>
+        <div class="right-section">
+            <a href="allcourses.html" class="header-button">All Courses</a>
+            <a href="learn.html" class="header-button">Learn</a>
+            <a href="teach.html" class="header-button">Teach</a>
+            <a href="learnhistory.html" class="header-button">Learn History</a>
+            <a href="teachhistory.html" class="header-button">Teach History</a>
+            <a href="profile.html" class="profile-button">Profile</a>
+
+            <img class="my-channel" src="channelpics/my-channel.jpeg">
+        </div>
+    </div>
+
+    <div class="history-container">
+        <h2 class="history-header">Learn History Details</h2>
+
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Tutor Name</th>
+                    <th>Course</th>
+                    <th>Day</th>
+                    <th>Rating (out of 5)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Mathematics</td>
+                    <td>Monday</td>
+                    <td><input type="number" class="rating-input" min="1" max="5" step="1"></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Physics</td>
+                    <td>Wednesday</td>
+                    <td><input type="number" class="rating-input" min="1" max="5" step="1"></td>
+                </tr>
+                <!-- Add more rows for additional learn history entries -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/learnHistory.js"></script>
+</body>
+</html>
