@@ -13,19 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script src="js/signup.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#signup-form').submit(function(event) {
-                // Prevent default form submission
-                event.preventDefault();
-
-                // Perform form validation if needed
-
-                // Assuming form is valid, redirect to allcourses.html
-                window.location.href = 'allcourses.html';
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="header">
@@ -49,6 +36,10 @@
                 <input type="text" id="branch" name="branch" placeholder="Type your branch">
             </div>
             <div class="form-control">
+                <label for="email">E-Mail</label>
+                <input type="text" id="email" name="email" placeholder="Type your email">
+            </div>
+            <div class="form-control">
                 <label for="courses">Courses Interested</label>
                 <input type="text" id="courses" name="courses" placeholder="Type courses you are interested in">
             </div>
@@ -66,7 +57,7 @@
                 <input type="password" id="password" name="password" placeholder="Must have at least 1 uppercase character and 1 number" required>
                 <div id="password-error" class="error-message"></div>
             </div>
-            <button type="submit">Sign Up</button>
+            <button type="submit" onclick="window.location.href='allcourses.html'">Sign Up</button>
         </form>
     </div>
 </body>
