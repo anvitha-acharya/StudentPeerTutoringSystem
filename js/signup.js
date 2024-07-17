@@ -1,5 +1,3 @@
-// signup.js
-
 $(document).ready(function() {
     $('#signup-form').submit(function(event) {
         event.preventDefault(); // Prevent default form submission
@@ -12,6 +10,7 @@ $(document).ready(function() {
             name: $('#name').val(),
             year: $('#year').val(),
             branch: $('#branch').val(),
+            email: $('#email').val(),
             courses: $('#courses').val(),
             phone: $('#phone').val(),
             username: $('#username').val(),
@@ -31,11 +30,20 @@ $(document).ready(function() {
             return; // Prevent further processing
         }
 
-        // Dummy example: Log form data
-        console.log('Form Data:', formData);
-
-        // Dummy example: Redirect to dashboard after successful signup
-        // Replace with your actual signup logic
-        // window.location.href = 'dashboard.html';
+        // AJAX request to server to handle signup
+        $.ajax({
+            type: 'POST',
+            url: '/signup',
+            data: JSON.stringify(formData),
+            contentType: 'application/json',
+            success: function(response) {
+                // Handle successful signup
+                if(response.success) {
+                    window.location.href = 'allcourses.html';
+                } else {
+                    alert('Signup failed: ' + response.message);
+                }
+            }
+        });
     });
 });
