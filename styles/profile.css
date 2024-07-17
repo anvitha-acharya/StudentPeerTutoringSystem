@@ -108,7 +108,7 @@ input[type="password"]::placeholder {
 }
 
 .submit-button,
-.reset-button {
+.reset-button,.logout-button {
     background-color: rgb(86, 86, 179);
     color: white;
     padding: 10px 20px;
@@ -121,12 +121,12 @@ input[type="password"]::placeholder {
 }
 
 .submit-button:hover,
-.reset-button:hover {
+.reset-button:hover,.logout-button:hover {
     background-color: rgb(135, 135, 211);
 }
 
 .submit-button:active,
-.reset-button:active {
+.reset-button:active,.logout-button:active {
     background-color: rgb(128, 128, 152);
 }
 .profile-button{
