@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Page</title>
-    <link rel="stylesheet" href="styles/learnTeach.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/learn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -15,54 +15,53 @@
             </div>
         </div>
         <div class="right-section">
-            <a href="allcourses.html" class="header-button">All Courses</a>
+            <a href="allcourses.html" class="header-button">My Classes</a>
             <a href="learn.html" class="header-button">Learn</a>
             <a href="teach.html" class="header-button">Teach</a>
             <a href="learnhistory.html" class="header-button">Learn History</a>
             <a href="teachhistory.html" class="header-button">Teach History</a>
+            <a href="aboutpage.html" class="header-button">About</a>
             <a href="profile.html" class="profile-button">Profile</a>
-
-            <img class="my-channel" src="channelpics/my-channel.jpeg">
         </div>
     </div>
 
-    
     <div class="tutors-container">
         <h2 class="tutors-header">Tutors Details</h2>
-
         <table class="tutors-table">
             <thead>
                 <tr>
                     <th>Tutor Name</th>
+                    <th>Course Code</th>
                     <th>Courses Teaching</th>
                     <th>Rating</th>
                     <th>Number of Students</th>
                     <th>Days Free</th>
-                    <th>Action</th>
+                    <th>Add</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Mathematics, Physics</td>
-                    <td>4.5</td>
-                    <td>30</td>
-                    <td>Monday, Wednesday, Friday</td>
-                    <td><button class="request-button" data-teacher="John Doe" data-course="Mathematics">Request</button></td>
-                </tr>
-                <tr>
-                    <td>Jane Smith</td>
-                    <td>Physics</td>
-                    <td>4.8</td>
-                    <td>25</td>
-                    <td>Tuesday, Thursday</td>
-                    <td><button class="request-button" data-teacher="Jane Smith" data-course="Physics">Request</button></td>
-                </tr>
-                <!-- Add more rows for additional tutors -->
+            <tbody id="tutors-table-body">
+                <!-- Tutors and courses will be dynamically inserted here -->
             </tbody>
         </table>
     </div>
 
+    <div class="courses-interested-container">
+        <h2 class="courses-interested-header">Courses Interested</h2>
+        <table class="courses-interested-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="courses-interested-table-body">
+                <!-- Courses interested will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/learn.js"></script>
 </body>
 </html>
