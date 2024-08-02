@@ -3,6 +3,57 @@ body {
     background-color: rgb(240, 240, 255);
     margin: 0;
 }
+.header {
+    background-color: rgb(219, 219, 249);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 50px;
+    border: 0.5px solid #c4d5dc;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    z-index: 120;
+}
+
+.header .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .right-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c3e50;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none; 
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none; 
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.15s;
+}
+
+.header-button:hover {
+    background-color: rgb(135, 135, 211);
+}
 
 .header {
     background-color: rgb(219, 219, 249);
@@ -133,4 +184,51 @@ body {
 
 .submit-rating-button:active {
     background-color: rgb(128, 128, 152);
+}
+.add-course-button, .request-button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.15s;
+}
+
+.add-course-button:hover, .request-button:hover {
+    background-color: rgb(135, 135, 211);
+}
+
+.add-course-button:active, .request-button:active {
+    background-color: rgb(128, 128, 152);
+}
+
+/* Add this to your styles/learnHistory.css file */
+
+.rating-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.rating-popup h3 {
+    margin-top: 0;
+}
+
+.rating-popup select,
+.rating-popup textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rating-popup button {
+    margin-right: 10px;
 }
