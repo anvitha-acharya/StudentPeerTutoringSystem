@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Courses</title>
+    <title>MY CLASSES</title>
     <link rel="stylesheet" href="styles/allcourses.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
@@ -15,46 +15,64 @@
             </div>
         </div>
         <div class="right-section">
-            <a href="allcourses.html" class="header-button">All Courses</a>
+            <a href="allcourses.html" class="header-button">My Classes</a>
             <a href="learn.html" class="header-button">Learn</a>
             <a href="teach.html" class="header-button">Teach</a>
             <a href="learnhistory.html" class="header-button">Learn History</a>
             <a href="teachhistory.html" class="header-button">Teach History</a>
+            <a href="aboutpage.html" class="header-button">About</a>
             <a href="profile.html" class="profile-button">Profile</a>
-            
         </div>
     </div>
 
     <div class="courses-container">
-        <h2 class="courses-header">All Courses</h2>
+        <h2 class="courses-header"> Classes to attend</h2>
 
-        <table class="courses-table">
+        <table class="courses-table" id="attend-table">
             <thead>
                 <tr>
+                    <th> Class ID</th>
                     <th>Course Name</th>
-                    <th>Tutor Name</th>
-                    <th>Tutor Rating</th>
-                    <th>Add Course</th>
-                    <th>Request Class</th>
+                    <th>Course Code</th>
+                    <th>Date</th>
+                    <th>Timings</th>
+                    <th>Join</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody></tbody>
+        </table>
+        <h2 class="courses-header">Classes to conduct</h2>
+
+        <table class="courses-table" id="conduct-table">
+            <thead>
                 <tr>
-                    <td>Mathematics</td>
-                    <td>John Doe</td>
-                    <td>4.5</td>
-                    <td><button class="add-course-button">Add</button></td>
-                    <td><button class="request-button">Request</button></td>
+                    <th>Class ID</th>
+                    <th>Course Name</th>
+                    <th>Course Code</th>
+                    <th>Date</th>
+                    <th>Timings</th>
+                    <th>Start</th>
                 </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="button-div">
+    <button class="create-class" id="create-class">Create Class</button>
+    </div>
+
+    <div id="create-class-container" style="display: none;">
+        <table class="courses-table" id="create-class-table">
+            <thead>
                 <tr>
-                    <td>Physics</td>
-                    <td>Jane Smith</td>
-                    <td>4.8</td>
-                    <td><button class="add-course-button">Add</button></td>
-                    <td><button class="request-button">Request</button></td>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Create</th>
                 </tr>
-                <!-- Add more rows for additional courses -->
-            </tbody>
+            </thead>
+            <tbody></tbody>
         </table>
     </div>
 
