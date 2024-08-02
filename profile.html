@@ -6,6 +6,8 @@
     <title>Profile Page</title>
     <link rel="stylesheet" href="styles/profile.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/profile.js"></script>
 </head>
 <body>
     <div class="header">
@@ -20,10 +22,12 @@
             <a href="teach.html" class="header-button">Teach</a>
             <a href="learnhistory.html" class="header-button">Learn History</a>
             <a href="teachhistory.html" class="header-button">Teach History</a>
+            <a href="aboutpage.html" class="header-button">About</a>
+
             <a href="profile.html" class="profile-button">Profile</a>
         </div>
     </div>
-
+    <div class="main-container">
     <div class="profile-container">
         <h2 class="profile-header">Edit Profile</h2>
 
@@ -49,28 +53,58 @@
             </div>
 
             <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-control">
                 <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <input type="text" id="username" name="username" placeholder="Enter your username" readonly>
             </div>
 
             <div class="form-control">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <div id="password-error" class="error-message"></div>
             </div>
 
             <div class="form-control">
-                <label for="courses-interested">Courses Interested</label>
-                <input type="text" id="courses-interested" name="courses-interested" placeholder="Enter courses you are interested in" required>
+                <input type="checkbox" id="tutor-checkbox" name="tutor-checkbox">
+                <label for="tutor-checkbox">Sign up also as a tutor</label>
+            </div>
+
+            <div id="tutor-fields" style="display: none;">
+                <div class="form-control">
+                    <label for="days-free">Days Free</label>
+                    <div class="days-checkboxes">
+                        <input type="checkbox" id="monday" name="days-free" value="Monday">
+                        <label for="monday">Monday</label>
+                        <input type="checkbox" id="tuesday" name="days-free" value="Tuesday">
+                        <label for="tuesday">Tuesday</label>
+                        <input type="checkbox" id="wednesday" name="days-free" value="Wednesday">
+                        <label for="wednesday">Wednesday</label>
+                        <input type="checkbox" id="thursday" name="days-free" value="Thursday">
+                        <label for="thursday">Thursday</label>
+                        <input type="checkbox" id="friday" name="days-free" value="Friday">
+                        <label for="friday">Friday</label>
+                        <input type="checkbox" id="saturday" name="days-free" value="Saturday">
+                        <label for="saturday">Saturday</label>
+                        <input type="checkbox" id="sunday" name="days-free" value="Sunday">
+                        <label for="sunday">Sunday</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="time">Timings Available</label>
+                    <input type="text" id="time" name="time" placeholder="Available timings">
+                </div>
             </div>
 
             <div class="form-actions">
                 <button type="submit" class="submit-button">Save Changes</button>
-                <button type="reset" class="reset-button">Reset</button>
-                <button type="logout" class="logout-button" onclick="window.location.href='login.html'">Logout</button>
+                <button type="button" class="logout-button" onclick="window.location.href='login.html'">Logout</button>
             </div>
         </form>
     </div>
-
-    <script src="js/profile.js"></script>
+    </div>
 </body>
 </html>
