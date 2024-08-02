@@ -1,0 +1,195 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(240, 240, 255);
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(219, 219, 249);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 50px;
+    border: 0.5px solid #c4d5dc;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    z-index: 120;
+}
+
+.header .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .right-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c3e50;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.15s;
+}
+
+.header-button:hover {
+    background-color: rgb(135, 135, 211);
+}
+
+.header-button:active {
+    background-color: rgb(128, 128, 152);
+}
+
+.profile-button {
+    margin-left: 15px;
+    background-color: white;
+    text-decoration: none;
+    color: rgb(86, 86, 179);
+    padding: 7px 15px;
+    border: solid;
+    border-color: rgb(86, 86, 179);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.15s;
+    margin-right: 15px;
+}
+
+.profile-button:hover {
+    background-color: rgb(193, 189, 189);
+}
+
+.profile-button:active {
+    background-color: rgb(194, 194, 211);
+}
+
+.tutors-container {
+    text-align: center;
+    background-color: #fff;
+    margin: 80px auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tutors-header {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #2c3e50;
+    flex: 1; /* Allows the label to take up available space */
+    margin-right: 10px;
+}
+
+.form-group textarea {
+    flex: 2; /* Allows the textarea to take up available space */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 15px; /* Adjust the height as needed */
+    resize: none; /* Make textarea non-resizable */
+}
+
+.form-group .checkbox-group1,.checkbox-group2,.checkbox-group3 {
+    flex: 2; /* Allows the checkboxes to take up available space */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.submit-button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.15s;
+}
+
+.submit-button:hover {
+    background-color: rgb(135, 135, 211);
+}
+
+.submit-button:active {
+    background-color: rgb(128, 128, 152);
+}
+
+.submit-button {
+    background-color: rgb(86, 86, 179);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.15s;
+    margin: 20px auto 0; /* Center align the submit button */
+    display: block; /* Ensure the button is displayed as a block */
+}
+
+.submit-button:hover {
+    background-color: rgb(135, 135, 211);
+}
+
+.submit-button:active {
+    background-color: rgb(128, 128, 152);
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#data-table th {
+    background-color: rgb(219, 219, 249);
+    color: #333;
+}
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
