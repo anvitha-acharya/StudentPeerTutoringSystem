@@ -1,0 +1,112 @@
+body {
+    font-family: Nunito,Arial;
+    font-family: 'Roboto', sans-serif;
+    background-image:url('background_img.jpeg');
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top:23px;
+    font-family: Nunito,Arial;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom:25px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.team-members {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.team-members h3 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.team-members ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.team-members li {
+    font-size: 22px;
+    color: #444444;
+    margin: 10px 0;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.team-members li:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-list li {
+    background-color: rgb(244, 238, 244);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style:groove;
+}
+
+.team-photo {
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.member-name{
+    font-family: Nunito;
+    color:black;
+}
