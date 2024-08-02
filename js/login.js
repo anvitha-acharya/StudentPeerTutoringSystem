@@ -6,9 +6,6 @@ $(document).ready(function() {
         var username = $('#username').val();
         var password = $('#password').val();
 
-        console.log('Username:', username);
-        console.log('Password:', password);
-
         // AJAX request to server to handle login
         $.ajax({
             type: 'POST',
@@ -18,10 +15,15 @@ $(document).ready(function() {
             success: function(response) {
                 // Handle successful login
                 if(response.success) {
+                    // Store user data in localStorage
+                    localStorage.setItem('user', JSON.stringify(response.user));
                     window.location.href = 'allcourses.html';
                 } else {
                     alert('Login failed: ' + response.message);
                 }
+            },
+            error: function(xhr, status, error) {
+                alert('Login failed: ' + error);
             }
         });
     });
