@@ -52,7 +52,7 @@ Import the SQL schema from database/schema.sql:
 ```bash
 mysql -u root -p peer_tutoring < database/schema.sql
 ```
-Update backend/config/db.js with your MySQL username & password.
+Update server.js with your MySQL username & password.
 
 ### 4. Run the application
 
